@@ -816,7 +816,7 @@ body::before {
 }
 
 h1 {
-    font-size: clamp(46px, 6vw, 82px);
+    font-size: clamp(36px, 4.8vw, 64px);
 }
 
 .descricao {
@@ -826,7 +826,7 @@ h1 {
 }
 
 .subtitulo {
-    font-size: clamp(25px, 3.2vw, 38px);
+    font-size: clamp(36px, 4.8vw, 64px);
 }
 
 .texto-destaque {
@@ -1089,8 +1089,7 @@ button,
 .tela-tecnologias .conteudo {
     max-width: 1180px;
     display: grid;
-    grid-template-columns: minmax(260px, 0.9fr) minmax(0, 1.1fr);
-    column-gap: 28px;
+    grid-template-columns: 1fr;
     align-items: center;
 }
 
@@ -1114,16 +1113,11 @@ button,
     max-width: 100%;
 }
 
-.tela-tecnologias .arquitetura {
+.tela-tecnologias .tecnologias {
     grid-column: 1;
     grid-row: 4;
-}
-
-.tela-tecnologias .tecnologias {
-    grid-column: 2;
-    grid-row: 4;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 10px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 14px;
     margin-bottom: 18px;
 }
 
@@ -1142,35 +1136,6 @@ button,
 
 .tela-tecnologias .tecnologia span {
     font-size: 13px;
-}
-
-.tela-tecnologias .arquitetura-titulo {
-    margin-bottom: 6px;
-    font-size: 17px;
-}
-
-.tela-tecnologias .arquitetura-seta {
-    font-size: 20px;
-    padding: 2px 0;
-}
-
-.tela-tecnologias .arquitetura-no {
-    min-width: 125px;
-    padding: 8px 14px;
-    font-size: 13px;
-}
-
-.tela-tecnologias .arquitetura-camada {
-    min-width: 210px;
-}
-
-.tela-tecnologias .arquitetura-camada small,
-.tela-tecnologias .arquitetura-no small {
-    font-size: 11px;
-}
-
-.tela-tecnologias .arquitetura-ramos {
-    gap: 14px;
 }
 
 @media (max-width: 600px) {
@@ -1213,7 +1178,6 @@ button,
         display: block;
     }
 
-    .tela-tecnologias .arquitetura,
     .tela-tecnologias .tecnologias {
         margin-left: auto;
         margin-right: auto;

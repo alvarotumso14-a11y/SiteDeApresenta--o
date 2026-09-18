@@ -1,0 +1,400 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Glichelp | Apresentação</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Barra de progresso -->
+    <div class="progresso">
+        <div class="barra-progresso" id="barraProgresso"></div>
+    </div>
+
+    <!-- Contador -->
+    <div class="contador" id="contador">
+        01 / 06
+    </div>
+
+
+    <main class="apresentacao">
+
+        <!-- =========================
+             TELA 01 - CAPA
+        ========================== -->
+        <section class="tela ativa" id="tela1">
+
+            <div class="conteudo centralizado">
+
+                <div class="logo">
+                    <img src="Imagens/Logo.png" alt="GlicHelp">
+                </div>
+
+                <p class="subtitulo">
+                    Tecnologia no cuidado com o diabetes.
+                </p>
+
+                <p class="descricao">
+                    Uma solução desenvolvida para auxiliar no
+                    acompanhamento e organização de informações
+                    relacionadas ao diabetes.
+                </p>
+
+                <button class="botao-principal" onclick="proximaTela()">
+                    Começar apresentação →
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             TELA 02 - PROBLEMA
+        ========================== -->
+        <section class="tela" id="tela2">
+
+            <div class="conteudo">
+
+                <span class="numero-tela">01</span>
+
+                <h1>
+                    Por que o <span>Glichelp?</span>
+                </h1>
+
+                <p class="texto-destaque">
+                    Muitos dados.<br>
+                    Pouca organização.
+                </p>
+
+                <div class="cards">
+
+                    <div class="card">
+                        <div class="icone icone-imagem">
+                            <img src="Imagens/Icone1.png" alt="">
+                        </div>
+                        <h3>Glicemia</h3>
+                        <p>
+                            Registro e acompanhamento das medições.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <div class="icone icone-imagem">
+                            <img src="Imagens/Icone4.png" alt="">
+                        </div>
+                        <h3>Alimentação</h3>
+                        <p>
+                            Informações relacionadas às refeições.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <div class="icone icone-imagem">
+                            <img src="Imagens/Icone2.png" alt="">
+                        </div>
+                        <h3>Insulina</h3>
+                        <p>
+                            Organização dos registros de aplicação.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <div class="icone icone-imagem">
+                            <img src="Imagens/Icone3.png" alt="">
+                        </div>
+                        <h3>Histórico</h3>
+                        <p>
+                            Visualização dos dados registrados.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             TELA 03 - SOLUÇÃO
+        ========================== -->
+        <section class="tela" id="tela3">
+
+            <div class="conteudo">
+
+                <span class="numero-tela">02</span>
+
+                <h1>
+                    Conheça o <span>Glichelp</span>
+                </h1>
+
+                <p class="descricao">
+                    Uma plataforma desenvolvida para centralizar
+                    informações e facilitar o acompanhamento
+                    dos registros.
+                </p>
+
+                <div class="solucao">
+
+                    <!-- Futuramente colocar screenshot -->
+                    <div class="mockup">
+                        <div class="mockup-topo">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <div class="mockup-conteudo">
+                            <div class="mockup-sidebar"></div>
+
+                            <div class="mockup-dashboard">
+                                <div class="mockup-card"></div>
+                                <div class="mockup-card"></div>
+                                <div class="mockup-grafico"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="funcionalidades">
+
+                        <div class="funcionalidade">
+                            <strong><span class="icone-funcionalidade dashboard-icone" aria-hidden="true">▦</span>Dashboard</strong>
+                            <span>Visualização rápida dos dados</span>
+                        </div>
+
+                        <div class="funcionalidade">
+                            <strong><span class="icone-funcionalidade registros-icone" aria-hidden="true">✓</span>Registros</strong>
+                            <span>Cadastro das informações</span>
+                        </div>
+
+                        <div class="funcionalidade">
+                            <strong><span class="icone-funcionalidade imagem-funcionalidade" aria-hidden="true"><img src="Imagens/relatorio.png" alt=""></span>Relatórios</strong>
+                            <span>Acompanhamento da evolução</span>
+                        </div>
+
+                        <div class="funcionalidade">
+                            <strong><span class="icone-funcionalidade imagem-funcionalidade" aria-hidden="true"><img src="Imagens/usuario.png" alt=""></span>Perfil</strong>
+                            <span>Dados e configurações do usuário</span>
+                        </div>
+
+                        <div class="funcionalidade">
+                            <strong><span class="icone-funcionalidade imagem-funcionalidade" aria-hidden="true"><img src="Imagens/Bot.png" alt=""></span>Tiabete</strong>
+                            <span>Assistente virtual integrado</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             TELA 04 - TIABETE
+        ========================== -->
+        <section class="tela" id="tela4">
+
+            <div class="conteudo">
+
+                <span class="numero-tela">03</span>
+
+                <h1>
+                    Conheça o <span>Tiabete</span>
+                </h1>
+
+                <p class="descricao">
+                    Um assistente virtual integrado ao Glichelp
+                    para auxiliar na interpretação e acompanhamento
+                    das informações registradas.
+                </p>
+
+                <div class="chat">
+
+                    <div class="chat-cabecalho">
+                        <div class="avatar" aria-hidden="true">
+                            <img src="Imagens/Bot.png" alt="">
+                        </div>
+
+                        <div>
+                            <strong>Tiabete</strong>
+                            <small>Assistente virtual</small>
+                        </div>
+                    </div>
+
+                    <div class="mensagens">
+
+                        <div class="mensagem bot">
+                            Olá!
+                        </div>
+
+                        <div class="mensagem bot">
+                            Analisei seus registros desta semana.
+                        </div>
+
+                        <div class="mensagem bot">
+                            Seus dados estão organizados e
+                            prontos para acompanhamento.
+                        </div>
+
+                        <div class="mensagem usuario">
+                            Como foram meus registros?
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             TELA 05 - TECNOLOGIAS
+        ========================== -->
+        <section class="tela" id="tela5">
+
+            <div class="conteudo">
+
+                <span class="numero-tela">04</span>
+
+                <h1>
+                    Por trás do <span>Glichelp</span>
+                </h1>
+
+                <p class="descricao">
+                    Tecnologias utilizadas no desenvolvimento
+                    do projeto.
+                </p>
+
+                <div class="tecnologias">
+
+                    <div class="tecnologia">
+                        <strong>HTML</strong>
+                        <span>Estrutura</span>
+                    </div>
+
+                    <div class="tecnologia">
+                        <strong>CSS</strong>
+                        <span>Interface</span>
+                    </div>
+
+                    <div class="tecnologia">
+                        <strong>JavaScript</strong>
+                        <span>Interatividade</span>
+                    </div>
+
+                    <div class="tecnologia">
+                        <strong>C#</strong>
+                        <span>Back-end</span>
+                    </div>
+
+                    <div class="tecnologia">
+                        <strong>Banco de Dados</strong>
+                        <span>Persistência</span>
+                    </div>
+
+                    <div class="tecnologia">
+                        <strong>Git + GitHub</strong>
+                        <span>Versionamento</span>
+                    </div>
+
+                    <div class="tecnologia">
+                        <strong>IA</strong>
+                        <span>Tiabete</span>
+                    </div>
+
+                </div>
+
+
+                <div class="arquitetura">
+
+                    <div>USUÁRIO</div>
+
+                    <span>↓</span>
+
+                    <div>FRONT-END</div>
+
+                    <span>↓</span>
+
+                    <div>BACK-END</div>
+
+                    <span>↓</span>
+
+                    <div>BANCO DE DADOS</div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             TELA 06 - FINAL
+        ========================== -->
+        <section class="tela" id="tela6">
+
+            <div class="conteudo centralizado">
+
+                <div class="logo">
+                    <img src="Imagens/Logo.png" alt="GlicHelp">
+                </div>
+
+                <p class="texto-destaque">
+                    Tecnologia que transforma<br>
+                    dados em acompanhamento.
+                </p>
+
+                <p class="descricao">
+                    Obrigado pela atenção!
+                </p>
+
+                <div class="acoes-final">
+
+                    <a class="botao-principal" href="../ProjetoFinal/dashboard.html">
+                        <span class="icone-acao" aria-hidden="true">↗</span>
+                        Demonstração
+                    </a>
+
+                    <a class="botao-secundario" href="https://github.com/alvarotumso14-a11y/ProjetoFinal" target="_blank" rel="noopener noreferrer">
+                        GitHub
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Navegação -->
+    <div class="navegacao">
+
+        <button onclick="telaAnterior()" aria-label="Tela anterior">
+            ←
+        </button>
+
+        <button onclick="proximaTela()" aria-label="Próxima tela">
+            →
+        </button>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

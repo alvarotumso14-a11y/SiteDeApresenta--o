@@ -1,6 +1,6 @@
 
 
-const totalTelas = 6;
+const totalTelas = 9;
 
 let telaAtual = 1;
 
@@ -44,7 +44,7 @@ function mostrarTela(numero) {
 
     tela.classList.add("ativa");
 
-    if (telaAtual === 4) {
+    if (telaAtual === 6) {
         revelarMensagens();
     } else {
         resetarMensagens();
@@ -65,6 +65,41 @@ function mostrarTela(numero) {
     barraProgresso.style.width =
         porcentagem + "%";
 }
+
+// ========================================
+// DEMO INTERATIVA
+// ========================================
+
+const demoDados = {
+    resumo: {
+        saudacao: "Visão geral",
+        titulo: "Olá, vamos acompanhar?",
+        conteudo: `<div class="demo-indicadores"><div><small>Glicemia média</small><strong>112 <em>mg/dL</em></strong></div><div><small>Registros</small><strong>18 <em>esta semana</em></strong></div><div><small>Última medição</small><strong>Hoje <em>08:30</em></strong></div></div><div class="demo-grafico" aria-label="Gráfico ilustrativo da evolução da glicemia"><span class="grafico-linha linha-um"></span><span class="grafico-linha linha-dois"></span><span class="grafico-linha linha-tres"></span><span class="grafico-ponto ponto-um"></span><span class="grafico-ponto ponto-dois"></span><span class="grafico-ponto ponto-tres"></span></div>`
+    },
+    registro: {
+        saudacao: "Novo registro",
+        titulo: "O que você quer registrar?",
+        conteudo: `<div class="demo-formulario"><label>Glicemia <input value="108" aria-label="Glicemia"></label><label>Horário <input value="08:30" aria-label="Horário"></label><button type="button" class="demo-salvar">Salvar medição</button></div>`
+    },
+    historico: {
+        saudacao: "Histórico",
+        titulo: "Seus últimos registros",
+        conteudo: `<div class="demo-historico"><div><strong>108 mg/dL</strong><span>Hoje, 08:30</span></div><div><strong>116 mg/dL</strong><span>Ontem, 19:45</span></div><div><strong>102 mg/dL</strong><span>Ontem, 07:20</span></div></div>`
+    }
+};
+
+document.querySelectorAll(".demo-menu-item").forEach(function(botao) {
+    botao.addEventListener("click", function() {
+        const dados = demoDados[botao.dataset.demo];
+        document.querySelectorAll(".demo-menu-item").forEach(function(item) {
+            item.classList.remove("ativo");
+        });
+        botao.classList.add("ativo");
+        document.getElementById("demoSaudacao").textContent = dados.saudacao;
+        document.getElementById("demoTitulo").textContent = dados.titulo;
+        document.getElementById("demoConteudo").innerHTML = dados.conteudo;
+    });
+});
 
 function resetarMensagens() {
     timersMensagens.forEach(function(timer) {

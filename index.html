@@ -56,13 +56,59 @@
 
 
         <!-- =========================
-             TELA 02 - PROBLEMA
+             TELA 02 - INTRODUÇÃO
         ========================== -->
         <section class="tela" id="tela2">
 
+            <div class="conteudo introducao-projeto">
+
+                <div>
+                    <span class="numero-tela">01</span>
+
+                    <h1>
+                        Cuidar melhor começa por <span>entender os dados.</span>
+                    </h1>
+
+                    <p class="descricao">
+                        O Glichelp foi criado para transformar registros do dia a dia
+                        em uma visão mais simples, organizada e útil para quem convive
+                        com o diabetes.
+                    </p>
+
+                    <div class="introducao-pontos">
+                        <div>
+                            <strong>01</strong>
+                            <span>Registrar sem complicação</span>
+                        </div>
+                        <div>
+                            <strong>02</strong>
+                            <span>Acompanhar a evolução</span>
+                        </div>
+                        <div>
+                            <strong>03</strong>
+                            <span>Tomar decisões com mais clareza</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="introducao-sinal" aria-hidden="true">
+                    <span>G</span>
+                    <small>glicemia<br>organização<br>cuidado</small>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             TELA 03 - PROBLEMA
+        ========================== -->
+        <section class="tela" id="tela3">
+
             <div class="conteudo">
 
-                <span class="numero-tela">01</span>
+                <span class="numero-tela">02</span>
 
                 <h1>
                     Por que o <span>Glichelp?</span>
@@ -122,23 +168,22 @@
         </section>
 
 
-        <!-- =========================
-             TELA 03 - SOLUÇÃO
-        ========================== -->
-        <section class="tela" id="tela3">
+           <!-- =========================
+               TELA 04 - SOLUÇÃO
+           ========================== -->
+           <section class="tela" id="tela4">
 
             <div class="conteudo">
 
-                <span class="numero-tela">02</span>
+                <span class="numero-tela">03</span>
 
                 <h1>
                     Conheça o <span>Glichelp</span>
                 </h1>
 
-                <p class="descricao">
-                    Uma plataforma desenvolvida para centralizar
-                    informações e facilitar o acompanhamento
-                    dos registros.
+                <p class="descricao descricao-solucao">
+                    Muitos dados.<br>
+                    Com organização.
                 </p>
 
                 <div class="solucao">
@@ -185,13 +230,69 @@
 
 
         <!-- =========================
-             TELA 04 - TIABETE
+             TELA 05 - DEMO
         ========================== -->
-        <section class="tela" id="tela4">
+        <section class="tela" id="tela5">
 
             <div class="conteudo">
 
-                <span class="numero-tela">03</span>
+                <span class="numero-tela">04</span>
+
+                <h1>Uma parte do projeto em <span>ação.</span></h1>
+
+                <p class="descricao">
+                    Esta é uma recriação da experiência principal do Glichelp:
+                    consultar um resumo, registrar uma medição e acompanhar o histórico.
+                </p>
+
+                <div class="demo-projeto">
+                    <aside class="demo-menu">
+                        <strong>Glichelp</strong>
+                        <button class="demo-menu-item ativo" data-demo="resumo">Resumo</button>
+                        <button class="demo-menu-item" data-demo="registro">Novo registro</button>
+                        <button class="demo-menu-item" data-demo="historico">Histórico</button>
+                    </aside>
+
+                    <div class="demo-painel">
+                        <div class="demo-topo">
+                            <div>
+                                <small id="demoSaudacao">Visão geral</small>
+                                <strong id="demoTitulo">Olá, vamos acompanhar?</strong>
+                            </div>
+                            <span class="demo-status">● online</span>
+                        </div>
+
+                        <div class="demo-conteudo" id="demoConteudo">
+                            <div class="demo-indicadores">
+                                <div><small>Glicemia média</small><strong>112 <em>mg/dL</em></strong></div>
+                                <div><small>Registros</small><strong>18 <em>esta semana</em></strong></div>
+                                <div><small>Última medição</small><strong>Hoje <em>08:30</em></strong></div>
+                            </div>
+                            <div class="demo-grafico" aria-label="Gráfico ilustrativo da evolução da glicemia">
+                                <span class="grafico-linha linha-um"></span>
+                                <span class="grafico-linha linha-dois"></span>
+                                <span class="grafico-linha linha-tres"></span>
+                                <span class="grafico-ponto ponto-um"></span>
+                                <span class="grafico-ponto ponto-dois"></span>
+                                <span class="grafico-ponto ponto-tres"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             TELA 06 - TIABETE
+        ========================== -->
+        <section class="tela" id="tela6">
+
+            <div class="conteudo">
+
+                <span class="numero-tela">05</span>
 
                 <h1>
                     Conheça o <span>Tiabete</span>
@@ -244,14 +345,14 @@
         </section>
 
 
-        <!-- =========================
-             TELA 05 - TECNOLOGIAS
-        ========================== -->
-        <section class="tela tela-tecnologias" id="tela5">
+           <!-- =========================
+               TELA 07 - TECNOLOGIAS
+           ========================== -->
+           <section class="tela tela-tecnologias" id="tela7">
 
             <div class="conteudo">
 
-                <span class="numero-tela">04</span>
+                <span class="numero-tela">06</span>
 
                 <h1>
                     Por trás do <span>Glichelp</span>
@@ -308,9 +409,47 @@
 
 
         <!-- =========================
-             TELA 06 - FINAL
+             TELA 08 - CONCLUSÕES
         ========================== -->
-        <section class="tela" id="tela6">
+        <section class="tela" id="tela8">
+
+            <div class="conteudo">
+
+                <span class="numero-tela">07</span>
+
+                <h1>O próximo passo é <span>evoluir.</span></h1>
+
+                <p class="descricao">
+                    A primeira versão organiza a jornada. As próximas podem torná-la
+                    ainda mais personalizada, preditiva e conectada ao cuidado profissional.
+                </p>
+
+                <div class="conclusoes">
+                    <div class="conclusao destaque">
+                        <strong>Agora</strong>
+                        <p>Uma base centralizada para registrar, visualizar e interpretar informações.</p>
+                    </div>
+                    <div class="conclusao">
+                        <strong>Próxima versão</strong>
+                        <p>Aplicativo mobile com notificações, funcionamento offline e sincronização segura.</p>
+                    </div>
+                    <div class="conclusao">
+                        <strong>Mais adiante</strong>
+                        <p>Integração com sensores, relatórios compartilháveis e recomendações mais personalizadas.</p>
+                    </div>
+                </div>
+
+                <p class="nota-final">O cuidado continua sendo humano. A tecnologia ajuda a deixar o caminho mais claro.</p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             TELA 09 - FINAL
+        ========================== -->
+        <section class="tela" id="tela9">
 
             <div class="conteudo centralizado">
 

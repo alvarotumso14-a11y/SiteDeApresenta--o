@@ -357,6 +357,14 @@ button {
     box-shadow: 0 30px 80px rgba(0, 0, 0, 0.3);
 }
 
+.foto-tela3 {
+    display: block;
+    width: 100%;
+    max-height: 430px;
+    object-fit: contain;
+    border-radius: 15px;
+}
+
 .mockup-topo {
     height: 35px;
 
@@ -523,6 +531,15 @@ button {
     font-size: 16px;
 
     line-height: 1.5;
+
+    opacity: 0;
+    transform: translateY(12px);
+    transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.mensagem.visivel {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .mensagem.bot {
@@ -582,32 +599,71 @@ button {
 
 .arquitetura {
     display: flex;
-
+    flex-direction: column;
     align-items: center;
-
     justify-content: center;
-
-    gap: 15px;
-
-    flex-wrap: wrap;
+    text-align: center;
 }
 
-.arquitetura div {
-    padding: 12px 20px;
-
-    border: 1px solid var(--azul);
-
-    border-radius: 8px;
-
-    color: #dbeafe;
-
-    font-size: 15px;
-}
-
-.arquitetura span {
-    color: var(--azul);
-
+.arquitetura-titulo {
+    display: block;
+    color: var(--vermelho-escuro);
     font-size: 20px;
+    letter-spacing: 3px;
+    margin-bottom: 14px;
+}
+
+.arquitetura-vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: min(100%, 520px);
+}
+
+.arquitetura-no {
+    min-width: 180px;
+    padding: 12px 20px;
+    border: 1px solid var(--vermelho);
+    border-radius: 8px;
+    color: var(--vermelho-escuro);
+    background: rgba(255, 255, 255, 0.65);
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.35;
+}
+
+.arquitetura-camada {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    min-width: min(100%, 280px);
+}
+
+.arquitetura-camada small,
+.arquitetura-no small {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.arquitetura-seta {
+    color: var(--vermelho);
+    font-size: 25px;
+    line-height: 1;
+    padding: 5px 0;
+}
+
+.arquitetura-ramos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    width: 100%;
+    margin-top: 2px;
+}
+
+.arquitetura-ramo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
@@ -661,10 +717,6 @@ button {
     .solucao {
         grid-template-columns: 1fr;
         gap: 30px;
-    }
-
-    .mockup {
-        display: none;
     }
 
     .tecnologias {
@@ -1017,13 +1069,7 @@ button,
     background: var(--vermelho);
 }
 
-.arquitetura div {
-    border-color: var(--vermelho);
-    color: var(--vermelho-escuro);
-    background: rgba(255, 255, 255, 0.65);
-}
-
-.arquitetura span {
+.arquitetura .arquitetura-seta {
     color: var(--vermelho);
 }
 
@@ -1038,6 +1084,93 @@ button,
 .navegacao button:focus-visible {
     color: #ffffff;
     background: var(--vermelho);
+}
+
+.tela-tecnologias .conteudo {
+    max-width: 1180px;
+    display: grid;
+    grid-template-columns: minmax(260px, 0.9fr) minmax(0, 1.1fr);
+    column-gap: 28px;
+    align-items: center;
+}
+
+.tela-tecnologias {
+    align-items: flex-start;
+    padding-top: 70px;
+}
+
+.tela-tecnologias .numero-tela,
+.tela-tecnologias h1,
+.tela-tecnologias > .conteudo > .descricao {
+    grid-column: 1 / -1;
+}
+
+.tela-tecnologias h1 {
+    margin-bottom: 10px;
+}
+
+.tela-tecnologias .descricao {
+    margin-bottom: 18px;
+    max-width: 100%;
+}
+
+.tela-tecnologias .arquitetura {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+.tela-tecnologias .tecnologias {
+    grid-column: 2;
+    grid-row: 4;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    margin-bottom: 18px;
+}
+
+.tela-tecnologias .tecnologia {
+    min-height: 66px;
+    padding: 12px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tela-tecnologias .tecnologia strong {
+    margin-bottom: 4px;
+    font-size: 16px;
+}
+
+.tela-tecnologias .tecnologia span {
+    font-size: 13px;
+}
+
+.tela-tecnologias .arquitetura-titulo {
+    margin-bottom: 6px;
+    font-size: 17px;
+}
+
+.tela-tecnologias .arquitetura-seta {
+    font-size: 20px;
+    padding: 2px 0;
+}
+
+.tela-tecnologias .arquitetura-no {
+    min-width: 125px;
+    padding: 8px 14px;
+    font-size: 13px;
+}
+
+.tela-tecnologias .arquitetura-camada {
+    min-width: 210px;
+}
+
+.tela-tecnologias .arquitetura-camada small,
+.tela-tecnologias .arquitetura-no small {
+    font-size: 11px;
+}
+
+.tela-tecnologias .arquitetura-ramos {
+    gap: 14px;
 }
 
 @media (max-width: 600px) {
@@ -1064,5 +1197,52 @@ button,
     .acoes-final .botao-principal,
     .acoes-final .botao-secundario {
         width: 100%;
+    }
+
+    .tela-tecnologias {
+        padding-top: 70px;
+    }
+
+    .tela-tecnologias .tecnologias {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+        margin-bottom: 12px;
+    }
+
+    .tela-tecnologias .conteudo {
+        display: block;
+    }
+
+    .tela-tecnologias .arquitetura,
+    .tela-tecnologias .tecnologias {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .tela-tecnologias .tecnologia {
+        min-height: 54px;
+        padding: 8px 6px;
+    }
+
+    .tela-tecnologias .tecnologia strong {
+        font-size: 14px;
+    }
+
+    .tela-tecnologias .tecnologia span {
+        font-size: 11px;
+    }
+
+    .tela-tecnologias .arquitetura-ramos {
+        gap: 8px;
+    }
+
+    .tela-tecnologias .arquitetura-no {
+        min-width: 125px;
+        padding: 7px 8px;
+        font-size: 11px;
+    }
+
+    .tela-tecnologias .arquitetura-camada {
+        min-width: 190px;
     }
 }

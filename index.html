@@ -143,23 +143,8 @@
 
                 <div class="solucao">
 
-                    <!-- Futuramente colocar screenshot -->
                     <div class="mockup">
-                        <div class="mockup-topo">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-
-                        <div class="mockup-conteudo">
-                            <div class="mockup-sidebar"></div>
-
-                            <div class="mockup-dashboard">
-                                <div class="mockup-card"></div>
-                                <div class="mockup-card"></div>
-                                <div class="mockup-grafico"></div>
-                            </div>
-                        </div>
+                        <img class="foto-tela3" src="Imagens/FotoProj.jpg" alt="Tela do projeto Glichelp">
                     </div>
 
 
@@ -233,20 +218,20 @@
 
                     <div class="mensagens">
 
-                        <div class="mensagem bot">
+                        <div class="mensagem bot" aria-hidden="true">
                             Olá!
                         </div>
 
-                        <div class="mensagem bot">
+                        <div class="mensagem bot" aria-hidden="true">
                             Analisei seus registros desta semana.
                         </div>
 
-                        <div class="mensagem bot">
+                        <div class="mensagem bot" aria-hidden="true">
                             Seus dados estão organizados e
                             prontos para acompanhamento.
                         </div>
 
-                        <div class="mensagem usuario">
+                        <div class="mensagem usuario" aria-hidden="true">
                             Como foram meus registros?
                         </div>
 
@@ -262,7 +247,7 @@
         <!-- =========================
              TELA 05 - TECNOLOGIAS
         ========================== -->
-        <section class="tela" id="tela5">
+        <section class="tela tela-tecnologias" id="tela5">
 
             <div class="conteudo">
 
@@ -317,22 +302,35 @@
                 </div>
 
 
-                <div class="arquitetura">
+                <div class="arquitetura" aria-label="Fluxo da arquitetura do Glichelp">
+                    <strong class="arquitetura-titulo">GLICHELP</strong>
 
-                    <div>USUÁRIO</div>
+                    <div class="arquitetura-vertical">
+                        <div class="arquitetura-no arquitetura-usuario">USUÁRIO</div>
+                        <span class="arquitetura-seta">↓</span>
 
-                    <span>↓</span>
+                        <div class="arquitetura-no arquitetura-camada">
+                            <strong>FRONT-END</strong>
+                            <small>HTML CSS JS</small>
+                        </div>
+                        <span class="arquitetura-seta">↓</span>
 
-                    <div>FRONT-END</div>
+                        <div class="arquitetura-no arquitetura-camada">
+                            <strong>BACK-END</strong>
+                            <small>C#</small>
+                        </div>
 
-                    <span>↓</span>
-
-                    <div>BACK-END</div>
-
-                    <span>↓</span>
-
-                    <div>BANCO DE DADOS</div>
-
+                        <div class="arquitetura-ramos">
+                            <div class="arquitetura-ramo">
+                                <span class="arquitetura-seta">↙</span>
+                                <div class="arquitetura-no">BANCO<br>DE DADOS</div>
+                            </div>
+                            <div class="arquitetura-ramo">
+                                <span class="arquitetura-seta">↘</span>
+                                <div class="arquitetura-no">TIABETE<br><small>IA</small></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
             </div>

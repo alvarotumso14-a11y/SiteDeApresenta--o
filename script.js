@@ -11,6 +11,8 @@ let telaAtual = 1;
 
 const contador = document.getElementById("contador");
 const barraProgresso = document.getElementById("barraProgresso");
+const mensagens = document.querySelectorAll(".mensagem");
+let timersMensagens = [];
 
 
 // ========================================
@@ -42,6 +44,12 @@ function mostrarTela(numero) {
 
     tela.classList.add("ativa");
 
+    if (telaAtual === 4) {
+        revelarMensagens();
+    } else {
+        resetarMensagens();
+    }
+
 
     // Atualiza contador
     contador.textContent =
@@ -56,6 +64,32 @@ function mostrarTela(numero) {
 
     barraProgresso.style.width =
         porcentagem + "%";
+}
+
+function resetarMensagens() {
+    timersMensagens.forEach(function(timer) {
+        clearTimeout(timer);
+    });
+
+    timersMensagens = [];
+
+    mensagens.forEach(function(mensagem) {
+        mensagem.classList.remove("visivel");
+        mensagem.setAttribute("aria-hidden", "true");
+    });
+}
+
+function revelarMensagens() {
+    resetarMensagens();
+
+    mensagens.forEach(function(mensagem, indice) {
+        const timer = setTimeout(function() {
+            mensagem.classList.add("visivel");
+            mensagem.setAttribute("aria-hidden", "false");
+        }, 450 + (indice * 900));
+
+        timersMensagens.push(timer);
+    });
 }
 
 

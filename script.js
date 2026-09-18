@@ -1,6 +1,6 @@
 
 
-const totalTelas = 9;
+const totalTelas = 10;
 
 let telaAtual = 1;
 
@@ -44,7 +44,7 @@ function mostrarTela(numero) {
 
     tela.classList.add("ativa");
 
-    if (telaAtual === 6) {
+    if (telaAtual === 7) {
         revelarMensagens();
     } else {
         resetarMensagens();

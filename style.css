@@ -1161,32 +1161,20 @@ button,
     line-height: 1.35;
 }
 
+/* Remove o círculo de fundo */
 .introducao-sinal {
-    width: 250px;
-    height: 250px;
-    display: grid;
-    place-content: center;
-    border: 1px solid rgba(215, 38, 56, 0.25);
-    border-radius: 50%;
-    background: linear-gradient(145deg, rgba(255, 255, 255, 0.9), rgba(255, 228, 230, 0.72));
-    box-shadow: 0 24px 50px rgba(168, 25, 39, 0.12);
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none; /* Remove o fundo */
+    padding: 0; /* Remove espaçamento */
 }
 
-.introducao-sinal span {
-    color: var(--vermelho);
-    font-size: 92px;
-    font-weight: 800;
-    line-height: 0.9;
-}
-
-.introducao-sinal small {
-    margin-top: 14px;
-    color: var(--vermelho-escuro);
-    font-size: 12px;
-    letter-spacing: 2px;
-    line-height: 1.6;
-    text-transform: uppercase;
+/* Ajusta o tamanho e o alinhamento da imagem */
+.introducao-sinal img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse o container */
+    height: auto; /* Mantém a proporção da imagem */
+    object-fit: contain; /* Enquadra a imagem */
 }
 
 .demo-projeto {
